@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_circle_15_grey"
+    android:layout_margin="10dp"
+    android:layout_height="70dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:id="@+id/ll_root">
+
+    <ImageView
+        android:id="@+id/iv_bluetooth_icon"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_bluetooth_grey"
+        android:contentDescription="@null"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:paddingStart="25dp"
+        android:paddingEnd="15dp">
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:textColor="#505050"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="测试设备001"/>
+        <TextView
+            android:id="@+id/tv_device_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#808080"
+            android:textSize="14sp"
+            tools:text="00-000-00"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_arrow_right"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_arrow_right_grey"
+        android:contentDescription="@null" />
+
+</LinearLayout>

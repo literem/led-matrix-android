@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_background"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_data_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_circle_5_white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="70dp">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入文本"
+            android:padding="15dp"
+            android:gravity="start"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:textColor="#404040"
+            android:textSize="18sp"
+            android:importantForAutofill="no" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_circle_5_blue"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="完成"/>
+</RelativeLayout>

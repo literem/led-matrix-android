@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:background="@drawable/bg_white_light_grey_frame">
+
+    <TextView
+        android:id="@+id/tv_pop_message_more_del"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#505050"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/global_background"/>
+
+    <TextView
+        android:id="@+id/tv_pop_message_more_re"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:text="重发"
+        android:textColor="#505050"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/global_background"/>
+
+    <TextView
+        android:id="@+id/tv_pop_message_more_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:text="复制"
+        android:textColor="#505050"
+        android:textSize="16sp" />
+
+</LinearLayout>

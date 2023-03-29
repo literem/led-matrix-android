@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- common style -->
+
+    <!-- 等待框的样式 -->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- popup window 从下往上进入和退出动画效果 -->
+    <style name="popup_anim_bottom_top" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_anim_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_anim_bottom_out</item>
+    </style>
+
+    <!-- popup window 从上往下进入和退出动画效果 -->
+    <style name="popup_anim_top_bottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_anim_top_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_anim_top_out</item>
+    </style>
+
+    <!-- popup window 从右边进入和退出动画效果 -->
+    <style name="popup_anim_right_left" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_right_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_right_out</item>
+    </style>
+
+    <style name="MenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:itemBackground">#FFFFFF</item>
+        <item name="android:textColor">#505050</item>
+    </style>
+</resources>

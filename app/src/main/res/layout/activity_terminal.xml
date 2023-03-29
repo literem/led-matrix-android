@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_color">
+
+    <include layout="@layout/layout_title"/>
+
+    <View
+        android:id="@+id/separate_view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/toolbar"
+        android:background="#CCCCCC"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/separate_view1"
+        android:layout_above="@+id/separate_view2"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/separate_view1"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ll_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_circle_50_white_light_frame"
+            android:paddingStart="15dp"
+            android:paddingEnd="60dp">
+
+            <TextView
+                android:id="@+id/tv_terminal_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:maxWidth="150dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="70dp"
+                android:ellipsize="end"
+                android:text="连接蓝牙设备"
+                android:textColor="#505050"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="28dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_15_light_yellow"
+                android:text="@string/mac"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:id="@+id/tv_terminal_device_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:maxWidth="100dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="70dp"
+                android:ellipsize="end"
+                android:text="0000-00"
+                android:textSize="12sp"
+                android:textColor="#808080" />
+
+            <Button
+                android:id="@+id/btn_terminal_device_connect"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|end"
+                android:background="@drawable/bg_circle_10_grey"
+                android:text="未连接"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_bluetooth_show"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_circle_50_grey">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_bluetooth_white"
+                android:contentDescription="@null" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/separate_view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/rl_data_input"
+        android:background="#CCCCCC"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_data_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll_terminal_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:visibility="visible">
+            <EditText
+                android:id="@+id/et_terminal_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:background="@drawable/bg_circle_5_grey"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:textColor="#505050"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_circle_5_blue"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

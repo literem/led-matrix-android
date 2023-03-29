@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_background">
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:background="@color/title_color"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/img_close"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/my_music"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/title_text_color"/>
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/img_more_grey"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="#303030"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="@string/all_music"/>
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            tools:text="(共20首)"
+            android:textColor="#808080"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/add_local_music"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@drawable/bg_circle_10_blue"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <com.literam.matrix.common.widget.RoundImageView
+            android:id="@+id/iv_convert"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_head_test"
+            android:layout_gravity="center"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:id="@+id/ll_music"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="@string/test_name"
+                android:textSize="15sp"
+                android:textColor="#303030"/>
+
+            <TextView
+                android:id="@+id/tv_signer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="@string/test_singer"
+                android:textSize="12sp"
+                android:textColor="#808080"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_player_start_1"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_player_next_1"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/iv_list"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_player_list_black"
+            android:contentDescription="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+        <com.literam.matrix.common.widget.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="本地音乐"
+            android:gravity="center_vertical"
+            android:textColor="#404040"
+            android:textSize="17sp"
+            app:textImage="@drawable/img_local"
+            app:textImageWidth="20dp"
+            app:textImageHeight="20dp"
+            app:textImageLocation="left"/>
+        <TextView
+            android:id="@+id/tv_music_count"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="#808080"
+            tools:text="(共50首)"/>
+        <TextView
+            android:id="@+id/tv_check_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#606060"
+            android:text="已选择5首"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/global_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/global_background"/>
+    <LinearLayout
+        android:id="@+id/ll_add_music_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <CheckBox
+                android:id="@+id/cb_check_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="全选"
+                android:textColor="#606060"
+                android:textSize="14sp"
+                android:paddingTop="30dp"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_refresh"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <com.literam.matrix.common.widget.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="重新扫描"
+                android:textSize="14sp"
+                android:textColor="#606060"
+                app:textImage="@drawable/img_refresh_black"
+                app:textImageLocation="top"
+                app:textImageHeight="20dp"
+                app:textImageWidth="20dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <com.literam.matrix.common.widget.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="添加到音乐列表"
+                android:textSize="14sp"
+                android:textColor="#606060"
+                app:textImage="@drawable/img_add_music"
+                app:textImageLocation="top"
+                app:textImageHeight="23dp"
+                app:textImageWidth="23dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

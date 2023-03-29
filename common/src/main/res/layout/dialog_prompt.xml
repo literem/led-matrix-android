@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxWidth="100dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_circle_10_white_light_frame"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|bottom"
+        android:text="@string/tips"
+        android:textColor="#303030"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        tools:text="请不要加班写BUG！！"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DFDFDF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:focusable="true" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#DFDFDF" />
+        <TextView
+            android:id="@+id/tv_dialog_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/sure"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>

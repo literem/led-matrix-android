@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <ImageView
+        android:id="@+id/item_music_list_play"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:src="@drawable/img_voice_red"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@null"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/item_music_list_number"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        tools:text="1"
+        android:textColor="#404040"
+        android:gravity="center" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:id="@+id/item_music_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            tools:text="恋爱使用说明书"
+            android:textSize="16sp"
+            android:textColor="#404040"/>
+        <TextView
+            android:id="@+id/item_music_list_signer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            tools:text="小缘"
+            android:textSize="13sp"
+            android:textColor="#666666"/>
+        <ImageView
+            android:id="@+id/item_music_list_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img_delete"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="center_vertical|end"
+            android:contentDescription="@null" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/global_background"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+
+</LinearLayout>

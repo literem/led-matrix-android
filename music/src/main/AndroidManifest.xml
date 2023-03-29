@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.literam.matrix.music">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application>
+
+        <activity android:name=".activity.MusicActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".activity.AddLyricActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LyricMakeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ScanMusicActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TextEditActivity" android:screenOrientation="portrait"/>
+
+        <service android:name=".service.MusicService"/>
+    </application>
+
+</manifest>

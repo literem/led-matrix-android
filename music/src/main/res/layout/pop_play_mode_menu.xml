@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="#aa000000">
+
+    <com.literam.matrix.common.widget.DrawableTextView
+        android:id="@+id/tv_play_mode_loop"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:text="单曲循环"
+        app:textImage="@drawable/img_mode_single_loop_white"
+        app:textImageHeight="14dp"
+        app:textImageWidth="14dp"
+        app:textImageLocation="left"
+        android:drawablePadding="5dp" />
+    <View
+        android:layout_width="120dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white"/>
+
+    <com.literam.matrix.common.widget.DrawableTextView
+        android:id="@+id/tv_play_mode_order"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="顺序播放"
+        android:textColor="@color/white"
+        app:textImage="@drawable/img_mode_order_white"
+        app:textImageHeight="14dp"
+        app:textImageWidth="14dp"
+        app:textImageLocation="left"
+        android:drawablePadding="5dp"/>
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white"/>
+
+    <com.literam.matrix.common.widget.DrawableTextView
+        android:id="@+id/tv_play_mode_random"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="随机播放"
+        android:textColor="@color/white"
+        app:textImage="@drawable/img_mode_random_white"
+        app:textImageHeight="14dp"
+        app:textImageWidth="14dp"
+        app:textImageLocation="left"
+        android:drawablePadding="5dp"/>
+</LinearLayout>

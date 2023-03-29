@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circle_10_white"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.literam.matrix.common.widget.DrawableTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="#505050"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="歌曲信息"
+            app:textImage="@drawable/img_info"
+            app:textImageLocation="left"
+            app:textImageHeight="20dp"
+            app:textImageWidth="20dp"
+            android:drawablePadding="5dp"/>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/img_close"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:text="歌名：这是一个歌名"
+        android:gravity="center_vertical"
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_signer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:text="歌手：歌手"
+        android:gravity="center_vertical"
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:text="专辑：无专辑"
+        android:gravity="center_vertical"
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:text="时长：8分31秒"
+        android:gravity="center_vertical"
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:text="保存路径：\\FontModel\\Music\\xxx.mp3"
+        android:gravity="center_vertical"
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:text="大小：5.20MB"
+        android:gravity="center_vertical"
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:text="添加时间：2020-05-20 13:14"
+        android:gravity="center_vertical"
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_lyric"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        tools:text="歌词：暂无"
+        android:gravity="center_vertical|top"
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+
+</LinearLayout>

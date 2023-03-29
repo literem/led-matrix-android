@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#505050"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:text="蓝牙"/>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_close"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#505050"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="刷新配对列表"/>
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_gravity="center_vertical|end"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_refresh"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <com.literam.matrix.common.widget.DrawableTextView
+        android:id="@+id/tv_pair"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:background="@color/white"
+        app:textImage="@drawable/img_arrow_right_grey"
+        app:textImageLocation="right"
+        app:textImageWidth="20dp"
+        app:textImageHeight="20dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#505050"
+        android:text="配对新设备"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"/>
+
+    <TextView
+        android:id="@+id/tv_pair_count"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#505050"
+        android:background="@color/white"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        tools:text="已配对设备 (0)"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/white"/>
+
+
+    <FrameLayout
+        android:id="@+id/fl_touch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="#000000">
+        <View
+            android:layout_width="150dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_circle_50_grey"/>
+    </FrameLayout>
+
+</LinearLayout>

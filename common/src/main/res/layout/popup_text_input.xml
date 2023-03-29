@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top_circle_10_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:text="关闭"
+            android:textColor="@color/red"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="输入文本"
+            android:textSize="18sp"
+            android:textColor="#505050"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:text="完成"
+            android:textColor="@color/green"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:background="@drawable/bg_circle_10_light_grey"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:importantForAutofill="no"
+        android:hint="在此输入文本信息"/>
+
+</LinearLayout>

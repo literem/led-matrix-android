@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:background="@drawable/bg_circle_10_white"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/ll_item_root">
+
+    <TextView
+        android:id="@+id/item_choose_music_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        tools:text="恋爱使用说明书"
+        android:textSize="18sp"
+        android:textColor="@color/color_50"/>
+
+    <TextView
+        android:id="@+id/item_choose_music_signer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        tools:text="小缘 - 温柔的缘"
+        android:textSize="13sp"
+        android:textColor="@color/color_80"/>
+
+</LinearLayout>

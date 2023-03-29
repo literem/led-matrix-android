@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_sync"
+        android:title="同步歌词"/>
+    <item
+        android:id="@+id/menu_not_sync"
+        android:title="不同步歌词" />
+</menu>

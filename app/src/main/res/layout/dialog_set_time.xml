@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circle_10_white">
+
+    <TextView
+        android:id="@+id/tv_dialog_animation_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#505050"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        tools:text="静态显示时间"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:textColor="#505050"
+            android:textSize="18sp"
+            tools:text="时间(ms)"/>
+        <ImageView
+            android:id="@+id/iv_dialog_set_time_sub"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:background="@drawable/bg_circle_0_white_grey_frame"
+            android:src="@drawable/img_sub"
+            android:contentDescription="@null" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="wrap_content"
+            android:minWidth="60dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:background="@drawable/bg_circle_0_white_grey_frame"
+            android:maxLength="4"
+            android:textSize="18sp"
+            android:textColor="#505050"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:importantForAutofill="no" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_time_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:background="@drawable/bg_circle_0_white_grey_frame"
+            android:src="@drawable/img_add"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_dialog_set_time_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/bg_circle_15_light_grey"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/uncheck_color"
+                android:text="取消" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_dialog_set_time_sure"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/bg_circle_15_blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="确定" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

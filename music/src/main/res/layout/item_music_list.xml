@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_item_root"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="15dp">
+
+        <!--<CheckBox
+        android:id="@+id/item_check_box"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>-->
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="40dp"
+            android:padding="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_add_music"
+            android:contentDescription="@null" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                tools:text="这是一个测试标题"
+                android:textSize="16sp"
+                android:textColor="#303030"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <com.literam.matrix.common.widget.DrawableTextView
+                android:id="@+id/item_signer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                tools:text="这是 - 个测试标题"
+                android:textSize="12sp"
+                android:textColor="#808080"
+                android:ellipsize="end"
+                android:maxLines="1"
+                app:textImage="@drawable/img_local"
+                app:textImageWidth="15dp"
+                app:textImageHeight="15dp"
+                app:textImageLocation="left"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/img_more_2"
+            android:layout_gravity="center_vertical|end"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_more"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#99000000"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fl_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <com.literam.matrix.common.widget.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_play_list"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:drawablePadding="3dp"
+                app:textImage="@drawable/img_add_white"
+                app:textImageLocation="top"
+                app:textImageHeight="18dp"
+                app:textImageWidth="18dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <com.literam.matrix.common.widget.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/delete"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:drawablePadding="3dp"
+                app:textImage="@drawable/img_delete_white"
+                app:textImageLocation="top"
+                app:textImageHeight="25dp"
+                app:textImageWidth="25dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_info"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <com.literam.matrix.common.widget.DrawableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/music_info"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:drawablePadding="3dp"
+                app:textImage="@drawable/img_info_white"
+                app:textImageLocation="top"
+                app:textImageHeight="20dp"
+                app:textImageWidth="20dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_title_with_more"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/global_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#505050"
+                    android:textStyle="bold"
+                    android:text="点阵模块(8)"/>
+
+                <TextView
+                    android:id="@+id/tv_frame_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/bg_circle_10_red"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="帧管理"/>
+
+                <TextView
+                    android:id="@+id/tv_sync_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/bg_circle_10_red"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="同步全部模块"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/ll_root"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+            <com.literam.matrix.common.widget.DrawableTextView
+                android:id="@+id/dtv_frame_more"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@drawable/bg_circle_10_blue"
+                android:gravity="center_vertical"
+                android:layout_gravity="start"
+                android:text="更多帧操作"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:textImage="@drawable/img_arrow_delta_down_white"
+                app:textImageLocation="right"
+                app:textImageWidth="16dp"
+                app:textImageHeight="16dp"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+
+                android:id="@+id/ll_toolbar"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="40dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/fl_pen"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_circle_50_blue">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_pen_white"
+                        android:contentDescription="@null" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_rubber"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_circle_50_grey">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_rubber_white"
+                        android:contentDescription="@null" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_clean"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_circle_50_red">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_clear_white"
+                        android:contentDescription="@null" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_sync"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_circle_50_red">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_sync_white"
+                        android:contentDescription="@null" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_char"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_circle_50_red">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/img_char_white" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fl_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_circle_50_red">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_image_white"
+                        android:contentDescription="@null" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_copy"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_circle_50_red">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_copy_white"
+                        android:contentDescription="@null" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <com.literam.matrix.common.widget.MultipleCircleView
+                android:id="@+id/multiple_circle"
+                android:background="@drawable/bg_circle_15_black"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

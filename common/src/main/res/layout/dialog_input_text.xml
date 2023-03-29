@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_circle_10_white_light_frame"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/title_text_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="标题"/>
+
+    <EditText
+        android:id="@+id/tv_dialog_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5dp"
+        android:background="@drawable/bg_circle_5_light_grey_with_frame"
+        android:textColor="#505050"
+        android:textSize="16sp"
+        android:hint="请输入内容"
+        android:textColorHint="#A0A0A0"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DFDFDF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:focusable="true" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#DFDFDF" />
+        <TextView
+            android:id="@+id/tv_dialog_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>

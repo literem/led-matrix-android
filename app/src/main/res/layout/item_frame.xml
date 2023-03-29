@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_item_frame_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="第一帧"
+        android:textSize="16sp"
+        android:textColor="#505050"/>
+    <View
+        android:id="@+id/check_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/shape_circle_check" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/global_background"/>
+</FrameLayout>

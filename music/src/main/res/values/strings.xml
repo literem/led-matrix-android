@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Music</string>
+
+    <string name="test_name">这是一个测试的名称</string>
+    <string name="test_singer">歌手是啥</string>
+    <string name="test_title">小缘 - 温柔的缘</string>
+    <string name="my_music">我的音乐</string>
+    <string name="all_music">全部音乐</string>
+    <string name="add_local_music">添加本地音乐</string>
+    <string name="add_play_list">加入播放列表</string>
+    <string name="delete">删除</string>
+    <string name="music_info">歌曲信息</string>
+    <string name="scan_lyric_path">请把歌词文件放到该路径LedMatrix目录的Lrc目录下</string>
+    <string name="sure">确定</string>
+
+</resources>

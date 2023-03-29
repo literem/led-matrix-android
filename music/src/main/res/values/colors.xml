@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorKeyPress">#cccccc</color>
+
+    <color name="global_background">#F5F6FA</color>//全局背景颜色
+
+    <color name="blue">#1296db</color>//主题蓝
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF5950</color>
+
+    <color name="uncheck_color">#606060</color>
+    <color name="light_grey">#eeeeee</color>
+    <color name="light_blue">#B4E0FA</color>
+    <color name="light_red">#F3D0CF</color>
+    <color name="color_50">#505050</color>
+    <color name="color_60">#606060</color>
+    <color name="color_80">#808080</color>
+
+
+    <!-- 标题颜色 -->
+    <color name="title_text_color">#505050</color>
+    <color name="title_color">#FFFFFF</color>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="custom_text_view_width">20dp</dimen>
+    <dimen name="custom_text_view_height">20dp</dimen>
+
+    <dimen name="title_text_size">19sp</dimen>
+    <dimen name="toolbar_height">55dp</dimen>
+
+</resources>

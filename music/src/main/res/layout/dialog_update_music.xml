@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_circle_10_white"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#505050"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="修改歌曲"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#505050"
+            android:text="歌名："/>
+
+        <EditText
+            android:id="@+id/et_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_circle_10_light_grey"
+            tools:text="爱情怎么喊停"
+            android:hint="输入歌曲名称"
+            android:textSize="16sp"
+            android:textColor="#505050"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#505050"
+            android:text="歌手："/>
+
+        <EditText
+            android:id="@+id/et_input_signer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_circle_10_light_grey"
+            tools:text="小缘"
+            android:hint="输入歌手名称"
+            android:textSize="16sp"
+            android:textColor="#505050"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/global_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_circle_10_light_grey"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#505050"
+            android:text="关闭" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_circle_10_blue"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:text="确定" />
+    </LinearLayout>
+
+
+</LinearLayout>

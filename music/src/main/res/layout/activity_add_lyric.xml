@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/global_background"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_add_lyric"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/bg_circle_10_white"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_music"
+            android:contentDescription="@null" />
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:id="@+id/tv_add_lyric_music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textSize="15sp"
+                android:textColor="#505050"
+                android:textStyle="bold"
+                android:text="请选择歌曲"/>
+            <TextView
+                android:id="@+id/tv_add_lyric_signer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:textSize="13sp"
+                android:textColor="#707070"
+                android:text="无"/>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_arrow_right"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_data_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_circle_5_white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="60dp">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入歌词"
+            android:padding="15dp"
+            android:gravity="start"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:textColor="#404040"
+            android:textSize="18sp"
+            android:importantForAutofill="no" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_circle_5_blue"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="开始制作歌词"/>
+</RelativeLayout>

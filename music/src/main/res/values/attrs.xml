@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义歌词 -->
+    <declare-styleable name="Indicator">
+        <attr name="color" format="color|reference" />
+        <attr name="height" format="dimension|reference" />
+    </declare-styleable>
+
+    <!-- 自定义歌词 -->
+    <declare-styleable name="LrcView">
+        <attr name="android:textSize" />
+        <attr name="normalTextColor" format="reference|color" />
+        <attr name="currentTextColor" format="reference|color" />
+        <attr name="dividerHeight" format="dimension|reference" />
+        <attr name="rows" format="integer" />
+    </declare-styleable>
+
+    <!-- 行文本滚动 -->
+    <declare-styleable name="RowScrollView">
+        <attr name="android:textSize" />
+        <attr name="normalColor" format="reference|color" />
+        <attr name="currentColor" format="reference|color" />
+        <attr name="RowDivider" format="dimension|reference" />
+        <attr name="row" format="integer" />
+    </declare-styleable>
+
+</resources>

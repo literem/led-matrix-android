@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_music_details_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="#505050"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        tools:text="歌曲：爱情怎么喊停"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/global_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+        <com.literam.matrix.common.widget.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="-"
+            android:textColor="#707070"
+            android:textSize="20sp"
+            app:textImage="@drawable/img_voice"
+            app:textImageWidth="20dp"
+            app:textImageHeight="20dp"
+            app:textImageLocation="left"
+            android:drawablePadding="5dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar_volume"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"/>
+        <com.literam.matrix.common.widget.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="+"
+            android:textColor="#707070"
+            android:textSize="17sp"
+            app:textImage="@drawable/img_voice"
+            app:textImageWidth="20dp"
+            app:textImageHeight="20dp"
+            app:textImageLocation="left"
+            android:drawablePadding="5dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/global_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:id="@+id/fl_make_lyric"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:src="@drawable/img_lyric_make"
+                android:padding="6dp"
+                android:background="@drawable/bg_circle_50_light_grey"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#606060"
+                android:textSize="13sp"
+                android:text="制作歌词"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_add_lyric"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:src="@drawable/img_lyric_add"
+                android:padding="8dp"
+                android:background="@drawable/bg_circle_50_light_grey"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#606060"
+                android:textSize="13sp"
+                android:text="添加本地歌词"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_update_lyric"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:src="@drawable/img_lyric_update"
+                android:padding="12dp"
+                android:background="@drawable/bg_circle_50_light_grey"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#606060"
+                android:textSize="13sp"
+                android:text="修改当前歌词"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_remove_lyric"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/img_delete"
+                android:padding="12dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_50_light_grey"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#606060"
+                android:textSize="13sp"
+                android:text="移除歌词"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:id="@+id/fl_update_music_info"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/img_lyric_name_update"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/bg_circle_50_light_grey"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#606060"
+                android:textSize="13sp"
+                android:text="修改信息"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_music_info"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/img_lyric_info"
+                android:padding="12dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_50_light_grey"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#606060"
+                android:textSize="13sp"
+                android:text="歌曲信息"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/global_background"/>
+    <Button
+        android:id="@+id/btn_music_details_close"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:textSize="15sp"
+        android:textColor="#707070"
+        android:text="关闭"/>
+</LinearLayout>

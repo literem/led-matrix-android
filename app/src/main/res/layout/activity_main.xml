@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_title"/>
+
+    <!-- 中间内容控件 -->
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DCDCDC" />
+
+    <!-- 底部导航图标 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <!-- 连接 -->
+        <LinearLayout
+            android:id="@+id/llHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/sel_touch">
+
+            <ImageView
+                android:id="@+id/iv_main_home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/sel_main_home_img"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_main_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="连接"
+                android:textSize="16sp"
+                android:textColor="@drawable/sel_main_color"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/global_background"/>
+
+        <!-- 功能 -->
+        <LinearLayout
+            android:id="@+id/llMode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/sel_touch">
+
+            <ImageView
+                android:id="@+id/iv_main_more"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/sel_main_more_img"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:id="@+id/tv_main_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="功能"
+                android:textSize="16sp"
+                android:textColor="@drawable/sel_main_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

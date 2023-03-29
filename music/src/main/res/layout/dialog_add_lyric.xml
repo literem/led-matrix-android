@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circle_10_white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#505050"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        tools:text="选择歌词"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/scan_lyric_path"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_local_lyric"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/global_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_circle_10_light_grey"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:textColor="#505050"
+            android:text="@string/cancel" />
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_circle_10_blue"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:text="@string/sure" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
