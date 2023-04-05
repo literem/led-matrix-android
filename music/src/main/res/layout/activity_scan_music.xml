@@ -16,7 +16,7 @@
         android:orientation="horizontal"
         android:paddingStart="10dp"
         android:paddingEnd="10dp">
-        <com.literam.matrix.common.widget.DrawableTextView
+        <com.literem.matrix.common.widget.DrawableTextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="本地音乐"
@@ -36,15 +36,25 @@
             android:textSize="14sp"
             android:textColor="#808080"
             tools:text="(共50首)"/>
+        <CheckBox
+            android:id="@+id/cb_check_all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="全选"
+            android:textSize="14sp"
+            android:textColor="#505050"/>
         <TextView
             android:id="@+id/tv_check_count"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:gravity="center"
             android:textSize="15sp"
             android:textColor="#606060"
-            android:text="已选择5首"/>
+            tools:text="已选择5首"/>
     </LinearLayout>
 
     <View
@@ -70,38 +80,18 @@
         android:baselineAligned="false">
 
         <FrameLayout
+            android:id="@+id/fl_scan_local"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent">
-            <CheckBox
-                android:id="@+id/cb_check_all"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="3dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="全选"
-                android:textColor="#606060"
-                android:textSize="14sp"
-                android:paddingTop="30dp"/>
-        </FrameLayout>
-
-
-        <FrameLayout
-            android:id="@+id/fl_refresh"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent">
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="重新扫描"
+                android:text="重新扫描本机歌曲"
                 android:textSize="14sp"
                 android:textColor="#606060"
+                android:drawablePadding="3dp"
                 app:textImage="@drawable/img_refresh_black"
                 app:textImageLocation="top"
                 app:textImageHeight="20dp"
@@ -113,13 +103,14 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent">
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="添加到音乐列表"
                 android:textSize="14sp"
                 android:textColor="#606060"
+                android:drawablePadding="3dp"
                 app:textImage="@drawable/img_add_music"
                 app:textImageLocation="top"
                 app:textImageHeight="23dp"

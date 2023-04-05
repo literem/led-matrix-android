@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
-        <com.literam.matrix.common.widget.DrawableTextView
+        <com.literem.matrix.common.widget.DrawableTextView
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="50dp"

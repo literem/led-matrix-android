@@ -17,14 +17,18 @@
         android:paddingStart="25dp"
         android:paddingEnd="25dp"
         tools:text="选择歌词"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:paddingStart="25dp"
         android:paddingEnd="15dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        android:text="@string/scan_lyric_path"/>
+        android:textColor="#707070"
+        android:textSize="14sp"
+        android:visibility="visible"
+        android:text="请把歌词文件放到路径为LedMatrix//Lrc//的目录下，若没有该目录需自行创建"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_local_lyric"

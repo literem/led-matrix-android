@@ -10,7 +10,7 @@
     <string name="add_play_list">加入播放列表</string>
     <string name="delete">删除</string>
     <string name="music_info">歌曲信息</string>
-    <string name="scan_lyric_path">请把歌词文件放到该路径LedMatrix目录的Lrc目录下</string>
+    <string name="scan_lyric_path">请把歌词文件放到路径为LedMatrix目录的Lrc子目录下</string>
     <string name="sure">确定</string>
 
 </resources>

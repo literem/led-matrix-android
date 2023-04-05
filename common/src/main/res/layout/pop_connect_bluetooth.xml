@@ -52,7 +52,7 @@
             android:contentDescription="@null" />
     </FrameLayout>
 
-    <com.literam.matrix.common.widget.DrawableTextView
+    <com.literem.matrix.common.widget.DrawableTextView
         android:id="@+id/tv_pair"
         android:layout_width="match_parent"
         android:layout_height="50dp"

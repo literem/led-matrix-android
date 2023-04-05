@@ -8,7 +8,7 @@
     android:paddingBottom="5dp"
     android:background="#aa000000">
 
-    <com.literam.matrix.common.widget.DrawableTextView
+    <com.literem.matrix.common.widget.DrawableTextView
         android:id="@+id/tv_play_mode_loop"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
@@ -29,7 +29,7 @@
         android:layout_height="0.5dp"
         android:background="@color/white"/>
 
-    <com.literam.matrix.common.widget.DrawableTextView
+    <com.literem.matrix.common.widget.DrawableTextView
         android:id="@+id/tv_play_mode_order"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
@@ -50,7 +50,7 @@
         android:layout_height="0.5dp"
         android:background="@color/white"/>
 
-    <com.literam.matrix.common.widget.DrawableTextView
+    <com.literem.matrix.common.widget.DrawableTextView
         android:id="@+id/tv_play_mode_random"
         android:layout_width="wrap_content"
         android:layout_height="35dp"

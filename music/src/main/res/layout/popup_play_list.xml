@@ -42,7 +42,7 @@
             android:textColor="#505050"
             android:textSize="16sp"/>
 
-        <com.literam.matrix.common.widget.DrawableTextView
+        <com.literem.matrix.common.widget.DrawableTextView
             android:id="@+id/dialog_music_list_clean"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

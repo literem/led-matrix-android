@@ -102,7 +102,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent">
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/dtv_lyric_make_choose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/dtv_lyric_make_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent">
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/dtv_lyric_make_restart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
     <!-- 歌词 -->
 
     <!-- 播放暂停按钮 -->
-    <com.literam.matrix.common.widget.RowScrollView
+    <com.literem.matrix.common.widget.RowScrollView
         android:id="@+id/text_vertical_scroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
