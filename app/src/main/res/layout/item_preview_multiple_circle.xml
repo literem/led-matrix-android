@@ -6,7 +6,7 @@
     android:layout_height="95dp"
     android:background="#404040">
 
-    <com.literam.matrix.common.widget.PreMultipleCircleView
+    <com.literem.matrix.common.widget.PreMultipleCircleView
         android:id="@+id/pre_view_multiple_circle"
         android:layout_width="70dp"
         android:layout_height="70dp"

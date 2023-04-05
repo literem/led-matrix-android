@@ -37,7 +37,7 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="#505050"/>
-                <com.literam.matrix.common.widget.DrawableTextView
+                <com.literem.matrix.common.widget.DrawableTextView
                     android:id="@+id/dtv_display_state"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="#505050"/>
-                    <com.literam.matrix.common.widget.DrawableTextView
+                    <com.literem.matrix.common.widget.DrawableTextView
                         android:id="@+id/dtv_in_anim"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -134,7 +134,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="#505050"/>
-                    <com.literam.matrix.common.widget.DrawableTextView
+                    <com.literem.matrix.common.widget.DrawableTextView
                         android:id="@+id/dtv_out_anim"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -168,7 +168,7 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="#505050"/>
-                <com.literam.matrix.common.widget.DrawableTextView
+                <com.literem.matrix.common.widget.DrawableTextView
                     android:id="@+id/dtv_toggle_speed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -236,7 +236,7 @@
                     android:background="@drawable/bg_circle_5_blue"/>
             </FrameLayout>
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/dtv_edit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -254,7 +254,7 @@
                 app:textImageLocation="left"
                 android:drawablePadding="3dp"/>
 
-            <com.literam.matrix.common.widget.RowScrollView
+            <com.literem.matrix.common.widget.RowScrollView
                 android:id="@+id/text_vertical_scroll"
                 android:layout_width="match_parent"
                 android:background="@drawable/bg_circle_10_white"

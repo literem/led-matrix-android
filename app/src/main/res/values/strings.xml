@@ -8,7 +8,7 @@
     <string name="close">关闭</string>
     <string name="zero">0</string>
     <string name="app_introduction">这是针对16xN个像素点的LED点阵屏幕所开发的一款上位机软件，采用蓝牙通信与下位机进行数据交互，软件使用到的图标均来自网络。软件完全开源免费使用，开源地址：https://github.com/literem/led-matrix-android   由于本人实力有限，软件使用过程中难免会遇到BUG。如果有其他建议可以反馈给我，QQ：1173334056</string>
-    <string name="current_version">当前版本:V1.0</string>
+    <string name="current_version">当前版本:V1.1</string>
     <string name="description">软件说明</string>
 
 

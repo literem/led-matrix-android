@@ -27,7 +27,7 @@
             android:layout_height="50dp"
             android:orientation="horizontal">
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_mode_lyric"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -47,7 +47,7 @@
                 app:textImageLocation="left"
                 android:drawablePadding="5dp"/>
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_mode_lyric_make"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -83,7 +83,7 @@
             android:layout_height="50dp"
             android:orientation="horizontal">
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_mode_static"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -103,7 +103,7 @@
                 app:textImageLocation="left"
                 android:drawablePadding="5dp"/>
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_mode_scroll"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -130,7 +130,7 @@
             android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_mode_time_clock"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -150,7 +150,7 @@
                 app:textImageLocation="left"
                 app:textImageWidth="23dp" />
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_mode_custom"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -186,7 +186,7 @@
             android:layout_height="50dp"
             android:orientation="horizontal"
             android:layout_marginBottom="20dp">
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_mode_terminal"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -206,7 +206,7 @@
                 app:textImageLocation="left"
                 android:drawablePadding="5dp"/>
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_mode_about"
                 android:layout_width="0dp"
                 android:layout_weight="1"

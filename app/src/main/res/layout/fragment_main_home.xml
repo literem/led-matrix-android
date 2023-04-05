@@ -133,7 +133,7 @@
                 android:layout_gravity="start|center_vertical"
                 android:contentDescription="@null"
                 android:src="@drawable/img_module" />
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/dtv_module_size"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -222,7 +222,7 @@
                 android:src="@drawable/img_display_mode"
                 android:contentDescription="@null"/>
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/tv_display_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -311,7 +311,7 @@
                 android:layout_gravity="start|center_vertical"
                 android:src="@drawable/img_auto_display"
                 android:contentDescription="@null"/>
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:id="@+id/dtv_auto_display"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

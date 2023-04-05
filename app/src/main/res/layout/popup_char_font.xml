@@ -44,7 +44,7 @@
             android:background="@drawable/bg_circle_10_white"
             android:layout_margin="10dp"
             android:orientation="vertical">
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:gravity="center_vertical"
@@ -70,7 +70,7 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"/>
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="10dp"
@@ -103,7 +103,7 @@
             </LinearLayout>
 
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="10dp"
@@ -133,7 +133,7 @@
                     android:text="HZK16"/>
             </LinearLayout>
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="10dp"
@@ -163,7 +163,7 @@
                     android:text="反向取模"/>
             </LinearLayout>
 
-            <com.literam.matrix.common.widget.DrawableTextView
+            <com.literem.matrix.common.widget.DrawableTextView
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="10dp"

@@ -31,7 +31,7 @@
             android:paddingEnd="20dp"
             android:text="当前状态："/>
 
-        <com.literam.matrix.common.widget.DrawableTextView
+        <com.literem.matrix.common.widget.DrawableTextView
             android:id="@+id/dtv_scroll_state"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
             android:paddingEnd="20dp"
             android:text="当前滚动速度："/>
 
-        <com.literam.matrix.common.widget.DrawableTextView
+        <com.literem.matrix.common.widget.DrawableTextView
             android:id="@+id/dtv_scroll_speed"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
